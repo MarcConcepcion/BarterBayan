@@ -1,0 +1,67 @@
+/* ── Top header bar ── */
+.nav-top {
+  position:    sticky; top: 0;
+  background:  var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding:     10px var(--space-md);
+  display:     flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index:     var(--z-nav);
+  box-shadow:  0 1px 4px rgba(0,0,0,0.06);
+}
+.nav-brand { display: flex; flex-direction: column; gap: 0; }
+.nav-brand-name  { font-size: 1.1rem; font-weight: 700; color: var(--color-navy); letter-spacing: -0.01em; }
+.nav-brand-sub   { font-size: 0.65rem; color: var(--color-muted); margin-top: -2px; }
+.nav-bell-btn {
+  width:  40px; height: 40px;
+  background: var(--color-surface2);
+  border:  1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; font-size: 1.1rem;
+  transition: background var(--transition);
+}
+.nav-bell-btn:hover { background: var(--color-emerald-lt); }
+.nav-badge {
+  position:    absolute; top: 4px; right: 4px;
+  background:  var(--color-danger); color: #fff;
+  font-size:   0.55rem; font-weight: 700;
+  width: 14px; height: 14px;
+  border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+}
+ 
+/* ── Bottom tab bar ── */
+.nav-bottom {
+  position:         fixed; bottom: 0; left: 0; right: 0;
+  height:           60px;
+  background:       var(--color-surface);
+  border-top:       1px solid var(--color-border);
+  display:          flex;
+  align-items:      center;
+  justify-content:  space-around;
+  z-index:          var(--z-nav);
+}
+.nav-tab {
+  display:        flex; flex-direction: column;
+  align-items:    center; gap: 2px;
+  color:          var(--color-muted);
+  font-size:      0.62rem; font-weight: 500;
+  padding:        6px 14px;
+  border-radius:  var(--radius-sm);
+  transition:     color var(--transition);
+}
+.nav-tab:hover, .nav-tab.active { color: var(--color-emerald); }
+.nav-tab-icon { font-size: 1.3rem; line-height: 1; }
+ 
+.nav-post-btn {
+  width:  50px; height: 50px;
+  background:    var(--color-navy);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color:   #fff; font-size: 1.6rem; font-weight: 300;
+  box-shadow: var(--shadow-btn);
+  transition: background var(--transition), transform var(--transition);
+}
+.nav-post-btn:hover { background: var(--color-emerald); transform: scale(1.05); }

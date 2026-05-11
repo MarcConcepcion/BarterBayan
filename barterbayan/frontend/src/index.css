@@ -1,0 +1,84 @@
+@import "./styles/variables.css";
+ 
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+body {
+  background-color: var(--color-bg);
+  color:            var(--color-text);
+  font-family:      "Inter", "Segoe UI", Arial, sans-serif;
+  font-size:        15px;
+  line-height:      1.6;
+  min-height:       100vh;
+}
+ 
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+input, textarea, select { font-family: inherit; font-size: inherit; }
+ 
+::-webkit-scrollbar        { width: 4px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: var(--color-emerald); border-radius: var(--radius-full); }
+ 
+.leaflet-container { z-index: 1; }
+ 
+/* ── Shared overlay backdrop ── */
+.overlay-backdrop {
+  position:        fixed; inset: 0;
+  z-index:         var(--z-overlay);
+  background:      rgba(15,23,42,0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display:         flex;
+  align-items:     flex-end;
+  justify-content: center;
+}
+ 
+/* ── Shared form field ── */
+.form-field {
+  width:         100%;
+  background:    var(--color-surface);
+  color:         var(--color-text);
+  border:        1.5px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  padding:       11px 14px;
+  outline:       none;
+  transition:    border-color var(--transition), box-shadow var(--transition);
+}
+.form-field:focus {
+  border-color: var(--color-emerald);
+  box-shadow:   0 0 0 3px rgba(5,150,105,0.12);
+}
+ 
+/* ── Primary button ── */
+.btn-primary {
+  width:            100%;
+  background-color: var(--color-emerald);
+  color:            #fff;
+  border-radius:    var(--radius-sm);
+  padding:          13px;
+  font-weight:      600;
+  font-size:        15px;
+  letter-spacing:   0.01em;
+  transition:       background-color var(--transition), box-shadow var(--transition);
+  box-shadow:       var(--shadow-btn);
+}
+.btn-primary:hover    { background-color: var(--color-emerald-h); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; box-shadow: none; }
+ 
+/* ── Secondary button ── */
+.btn-secondary {
+  background:    var(--color-surface);
+  border:        1.5px solid var(--color-border-dark);
+  color:         var(--color-muted);
+  border-radius: var(--radius-sm);
+  padding:       10px 18px;
+  font-size:     14px;
+  font-weight:   500;
+  transition:    border-color var(--transition), color var(--transition);
+}
+.btn-secondary:hover { border-color: var(--color-emerald); color: var(--color-emerald); }
+ 
+/* ── Star rating display ── */
+.stars { display: inline-flex; gap: 2px; }
+.star  { font-size: 0.9rem; color: var(--color-border-dark); }
+.star.filled { color: var(--color-star); }

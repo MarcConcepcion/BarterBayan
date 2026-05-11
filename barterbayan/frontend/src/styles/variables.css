@@ -1,0 +1,42 @@
+:root {
+  /* ── Core palette ──────────────────────────────── */
+  --color-bg:         #F0F4F8;   /* light blue-grey page background (Login screen bg) */
+  --color-surface:    #FFFFFF;   /* white cards, panels, modals */
+  --color-surface2:   #F8FAFC;   /* light input bg, inner sections */
+  --color-border:     #E2E8F0;   /* light borders */
+  --color-border-dark:#CBD5E1;   /* stronger borders for inputs */
+  --color-text:       #1E293B;   /* near-black primary text */
+  --color-muted:      #64748B;   /* grey secondary text */
+  --color-emerald:    #059669;   /* emerald-600 — primary action */
+  --color-emerald-h:  #047857;   /* emerald-700 — hover */
+  --color-emerald-lt: #ECFDF5;   /* emerald-50  — "LOOKING FOR" bg */
+  --color-emerald-txt:#065F46;   /* emerald-900 — text on light green */
+  --color-navy:       #1E293B;   /* dark pill / badge bg */
+  --color-danger:     #EF4444;
+  --color-star:       #F59E0B;   /* amber star ratings */
+ 
+  /* ── Spacing ───────────────────────────────────── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+ 
+  /* ── Radii ─────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+ 
+  /* ── Shadows ────────────────────────────────────── */
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-btn:  0 4px 14px rgba(5,150,105,0.35);
+ 
+  /* ── Transition ─────────────────────────────────── */
+  --transition: 0.2s ease;
+ 
+  /* ── Z-index ─────────────────────────────────────── */
+  --z-nav:     40;
+  --z-overlay: 50;
+  --z-modal:   60;
+}

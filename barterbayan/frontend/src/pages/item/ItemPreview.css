@@ -1,0 +1,77 @@
+.preview-screen    { background:var(--color-bg); min-height:100vh; padding-bottom:90px; }
+.preview-loading   { text-align:center; padding:60px; color:var(--color-muted); }
+ 
+/* Full-bleed hero image */
+.preview-hero {
+  width:100%; height:260px; overflow:hidden; position:relative; background:var(--color-surface2);
+}
+.preview-hero img  { width:100%; height:100%; object-fit:cover; display:block; }
+.preview-hero-cond {
+  position:absolute; top:12px; left:12px;
+  background:rgba(30,41,59,0.82); color:#fff;
+  font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
+  padding:4px 10px; border-radius:var(--radius-full);
+}
+ 
+/* White content card */
+.preview-content {
+  background:  var(--color-surface);
+  padding:     var(--space-md);
+  display:     flex; flex-direction:column; gap:var(--space-md);
+}
+ 
+.preview-title-row { display:flex; justify-content:space-between; align-items:flex-start; gap:var(--space-md); }
+.preview-title     { font-size:1.25rem; font-weight:800; color:var(--color-navy); flex:1; line-height:1.25; }
+.preview-location  { display:flex; flex-direction:column; align-items:flex-end; gap:2px; flex-shrink:0; }
+.preview-loc-name  { font-size:0.78rem; font-weight:600; color:var(--color-navy); text-align:right; }
+.preview-loc-icon  { font-size:0.9rem; color:var(--color-emerald); }
+ 
+.preview-actions   { display:flex; align-items:center; gap:var(--space-md); }
+.preview-action-btn { background:none; border:none; font-size:1.2rem; color:var(--color-muted); cursor:pointer; transition:color var(--transition); }
+.preview-action-btn:hover { color:var(--color-danger); }
+.preview-time      { font-size:0.78rem; color:var(--color-muted); margin-left:auto; display:flex; align-items:center; gap:4px; }
+ 
+/* LOOKING FOR green box */
+.preview-looking {
+  background:    var(--color-emerald-lt);
+  border:        1px solid rgba(5,150,105,0.2);
+  border-radius: var(--radius-sm);
+  padding:       12px var(--space-md);
+}
+.preview-looking-label {
+  font-size:0.68rem; font-weight:700; color:var(--color-emerald-txt);
+  letter-spacing:0.08em; text-transform:uppercase;
+  display:flex; align-items:center; gap:6px; margin-bottom:5px;
+}
+.preview-looking-val  { font-size:0.92rem; color:var(--color-emerald-txt); font-weight:500; }
+ 
+/* Description section */
+.preview-desc-title { font-size:0.88rem; font-weight:700; color:var(--color-navy); margin-bottom:6px; }
+.preview-desc-text  { font-size:0.88rem; color:var(--color-text); line-height:1.6; }
+ 
+/* Seller row */
+.preview-seller {
+  display:flex; align-items:center; gap:10px;
+  padding-top:var(--space-md);
+  border-top:1px solid var(--color-border);
+}
+.preview-seller-avatar {
+  width:40px; height:40px; border-radius:var(--radius-full);
+  background:var(--color-surface2); overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:1rem; color:var(--color-muted); flex-shrink:0;
+}
+.preview-seller-avatar img { width:100%; height:100%; object-fit:cover; }
+.preview-seller-info { display:flex; flex-direction:column; gap:3px; flex:1; }
+.preview-seller-name { font-weight:700; font-size:0.9rem; color:var(--color-navy); }
+.preview-seller-row  { display:flex; align-items:center; gap:6px; }
+.preview-verified    { font-size:0.72rem; font-weight:700; color:var(--color-emerald); display:flex; align-items:center; gap:3px; }
+.preview-chat-btn    { font-size:1.4rem; color:var(--color-muted); transition:color var(--transition); }
+.preview-chat-btn:hover { color:var(--color-emerald); }
+ 
+/* Sticky trade offer button */
+.preview-offer-btn {
+  position:fixed; bottom:72px; left:var(--space-md); right:var(--space-md);
+  border-radius:var(--radius-md); padding:15px;
+  font-size:1rem; display:flex; align-items:center; justify-content:center; gap:8px;
+}

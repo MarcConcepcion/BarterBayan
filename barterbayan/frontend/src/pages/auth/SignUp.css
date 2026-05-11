@@ -1,0 +1,12 @@
+/* SignUp shares auth-screen and auth-card from Login.css */
+/* Import Login.css rules here or duplicate them — both pages use identical layout */
+@import "./Login.css";
+ 
+.auth-success {
+  color:         var(--color-emerald);
+  background:    rgba(5,150,105,0.1);
+  border:        1px solid var(--color-emerald);
+  border-radius: var(--radius-sm);
+  padding:       8px 12px;
+  font-size:     0.85rem;
+}

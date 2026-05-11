@@ -1,0 +1,62 @@
+.item-card {
+  background:    var(--color-surface);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow:      hidden;
+  cursor:        pointer;
+  box-shadow:    var(--shadow-card);
+  transition:    box-shadow var(--transition), transform var(--transition);
+}
+.item-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.12); transform: translateY(-2px); }
+ 
+.item-card-img { width: 100%; height: 210px; overflow: hidden; position: relative; }
+.item-card-img img { width:100%; height:100%; object-fit:cover; display:block; }
+.item-card-placeholder { width:100%; height:100%; background:var(--color-surface2); display:flex; align-items:center; justify-content:center; font-size:3rem; }
+ 
+/* Condition badge overlaid on photo */  
+.item-card-cond {
+  position: absolute; top: 10px; left: 10px;
+  background: rgba(30,41,59,0.82);
+  color: #fff; font-size: 0.65rem; font-weight: 700;
+  padding: 3px 8px; border-radius: var(--radius-full);
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+/* Location badge overlaid bottom-right */  
+.item-card-loc {
+  position: absolute; bottom: 8px; right: 10px;
+  background: rgba(255,255,255,0.88);
+  color: var(--color-navy); font-size: 0.7rem; font-weight: 600;
+  padding: 2px 8px; border-radius: var(--radius-full);
+  display: flex; align-items: center; gap: 4px;
+}
+ 
+.item-card-body { padding: 12px var(--space-md); }
+ 
+.item-card-seller {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 6px;
+}
+.item-card-avatar {
+  width: 26px; height: 26px; border-radius: var(--radius-full);
+  background: var(--color-surface2); overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; flex-shrink: 0;
+}
+.item-card-avatar img { width:100%; height:100%; object-fit:cover; }
+.item-card-seller-name { font-size: 0.82rem; font-weight: 600; color: var(--color-navy); }
+.item-card-time        { font-size: 0.75rem; color: var(--color-muted); margin-left: auto; }
+ 
+.item-card-title { font-weight: 700; font-size: 0.95rem; color: var(--color-navy); margin-bottom: 8px; }
+ 
+/* "LOOKING FOR" green chip */
+.item-card-looking {
+  background:    var(--color-emerald-lt);
+  border-radius: var(--radius-sm);
+  padding:       8px 12px;
+}
+.item-card-looking-label {
+  font-size: 0.68rem; font-weight: 700; color: var(--color-emerald-txt);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 4px; margin-bottom: 3px;
+}
+.item-card-looking-val { font-size: 0.82rem; color: var(--color-emerald-txt); }
